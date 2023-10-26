@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/icons/file.png</file>
+        <file>res/icons/help.png</file>
+        <file>res/icons/next.png</file>
+        <file>res/icons/off.png</file>
+        <file>res/icons/previous.png</file>
+        <file>res/icons/redo.png</file>
+        <file>res/icons/undo.png</file>
+        <file>res/icons/zoom-in.png</file>
+        <file>res/icons/zoom-out.png</file>
+        <file>res/icons/fit-window.png</file>
+        <file>res/icons/icon.jpg</file>
+        <file>res/icons/clear.png</file>
+        <file>res/icons/frame.png</file>
+        <file>res/icons/segall.jpg</file>
+        <file>res/icons/base.png</file>
+        <file>res/icons/phase.png</file>
+        <file>res/icons/save.png</file>
+    </qresource>
+</RCC>
