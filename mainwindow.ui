@@ -237,10 +237,11 @@
    <addaction name="actionSetAsBase"/>
    <addaction name="actionSetAsSystolic"/>
    <addaction name="separator"/>
+   <addaction name="actionSystolic_Detection"/>
    <addaction name="actionSegment"/>
    <addaction name="actionSegment_All"/>
    <addaction name="actionClear"/>
-   <addaction name="actionSystolic_Detection"/>
+   <addaction name="actionRegression"/>
    <addaction name="separator"/>
    <addaction name="actionHelp"/>
    <addaction name="actionOff"/>
@@ -458,6 +459,15 @@
    </property>
    <property name="text">
     <string>Save Json</string>
+   </property>
+  </action>
+  <action name="actionRegression">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/icons/regression.png</normaloff>:/res/icons/regression.png</iconset>
+   </property>
+   <property name="text">
+    <string>Regression</string>
    </property>
   </action>
  </widget>

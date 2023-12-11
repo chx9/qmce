@@ -17,5 +17,6 @@
         <file>res/icons/base.png</file>
         <file>res/icons/phase.png</file>
         <file>res/icons/save.png</file>
+        <file>res/icons/regression.png</file>
     </qresource>
 </RCC>
