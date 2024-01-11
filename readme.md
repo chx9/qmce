@@ -12,10 +12,13 @@ The MCE Automated Analysis Software is an interactive tool developed to streamli
 The MCE Automated Analysis Software utilizes a Seq2Seq architecture with Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and an attention mechanism for end-systolic frame recognition. This model effectively identifies end-systolic frames in MCE sequences by capturing spatial and temporal information.
 
 **github repo**: https://github.com/chx9/mcephase
+![phace_model](res/imgs/phace_model.jpg)
 
 ## myocardial segmentation algorithm:
 The Myocardial Segmentation Algorithm in the MCE Automated Analysis Software is based on the DeepLabv3+ model, which is known for its accurate pixel labeling capabilities. To further enhance the model's performance, the algorithm incorporates a Channel Attention Module and a Multi-Scale Feature Attention Aggregation Module. These modules enable the model to selectively emphasize informative features and capture correlations across different scales, resulting in improved segmentation accuracy.
 
+![deeplabv3+](res/imgs/deeplabv3+.png)
+![aspp_improved](res/imgs/aspp_improved.png)
 **github repo**: https://github.com/chx9/mceseg
 # features
 ## automatically select systolic frames
