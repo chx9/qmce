@@ -1,10 +1,13 @@
 # introduction
  Myocardial Contrast Echocardiography (MCE) serves as a valuable, non-invasive tool for perfusion evaluation, offering cost-effectiveness, radiation avoidance, and bedside applicability.
 
-Despite the advantages of MCE, its clinical use is hindered by manual annotation's time-consuming nature and its dependence on clinicians' expertise. Low repeatability in manual annotation further limits widespread adoption.
+
+![procedure](res/imgs/procedure.png)
+
+MCE perfusion parameters needs two crucial steps: the selection of the end-systolic frame and subsequent segmentation of the myocardium in that frame. It can be asserted that the precise selection of the end-systolic frame and the segmentation of the myocardium are essential prerequisites for the dependable estimation of perfusion parameters.  the absence of automated technologies and software has resulted in protracted manual annotation and analysis times, significantly constraining its clinical applicability. Moreover, the manual annotation of MCE exhibits limited reproducibility, relying substantially on the clinical expertise of practitioners. Hence, the development of automated methodologies for the computation of MCE myocardial perfusion parameters holds paramount significance
 
 The MCE Automated Analysis Software is an interactive tool developed to streamline the analysis of myocardial purfusion parameters in contrast echocardiography (MCE) data. It automates key processes such as end-systolic frame selection, myocardial segmentation, and calculation of myocardial perfusion parameters.
-![Alt text](res/imgs/app.png)
+![app](res/imgs/app.png)
 ## end-systolic frame detection algorithmn
 The MCE Automated Analysis Software utilizes a Seq2Seq architecture with Convolutional Neural Networks (CNNs), Long Short-Term Memory (LSTM) networks, and an attention mechanism for end-systolic frame recognition. This model effectively identifies end-systolic frames in MCE sequences by capturing spatial and temporal information.
 
@@ -25,14 +28,14 @@ Following the selection of systolic frames, click on "Segment All Selected Frame
 after ES selection and myocardium segmentation, click  "Regression" button, qmce will perform myocardial perfusion parameter calculation.the 17-segment model is employed for assessment. The primary distinction between the 17-segment and the previously utilized 16-segment model lies in the inclusion of an additional  segment, known as the apical cap. This modification provides a more comprehensive representation of myocardial anatomy and function.
 According to the American Society of Echocardiography, the clinical application of the 17-segment model is predominant in evaluating myocardial perfusion. 
 
-![Alt text](res/imgs/17-segments-model.png)
+![17-segments-model](res/imgs/17-segments-model.png)
 
 once click the "Regression" button, the results of 7 segments will pop out, it will calculate the A:plateau image intensity, $\beta$:myocardial blood flow velocity and MBF:myocardial blood flow and the R-squared of the regression
-![Alt text](https://raw.githubusercontent.com/chx9/qmce/main/res/imgs/results.png)
+![results](https://raw.githubusercontent.com/chx9/qmce/main/res/imgs/results.png)
 
 
 ## actions
-![Alt text](res/imgs/actions.png)
+![actions](res/imgs/actions.png)
 <!-- # demostration video
 [demo.webm](res/imgs/demo.webm) -->
 # installation 
